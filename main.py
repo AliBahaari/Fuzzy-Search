@@ -34,21 +34,7 @@ def testExact():
 
     print(allData)
 
-
-def testAllExact():
-    allData = []
-
-    for i, j in zip(colors_spec, brands_spec):
-        if i in user_query:
-            allData.append(all_specs_dicts[i])
-
-        if j in user_query:
-            allData.append(all_specs_dicts[i])
-
-    print(allData)
-
 # Tests
 
 # print(timeit(testSimilarity, number=100))
 # print(timeit(testExact, number=10000))
-# print(timeit(testAllExact, number=10000))
